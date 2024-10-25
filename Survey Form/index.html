@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satisfaction Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<h1 id="title">Satisfaction Survey</h1>
+<p id="description">Thank you for taking the time to help us improve our service</p>
+
+<form id="survey-form">
+  <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+
+  <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+
+  <label id="number-label">Age
+    (optional) <input type="number" id="number" min="12" max="120" placeholder="Age" /></label>
+
+  <label>Which option best describes your highest level of education completed? <select id="dropdown">
+      <option>Select current one</option>
+      <option>Some High School</option>
+      <option>High School Graduate</option>
+      <option>Graduate College</option>
+      <option>Post Graduate</option>
+    </select></label>
+
+  <label>Would you recommend Mumuberry to a friend?</label>
+  <div class="radio-group">
+    <label class="radio-option">
+      <input type="radio" value="definitely" name="recommendation" /> Definitely
+    </label>
+    <label class="radio-option">
+      <input type="radio" value="maybe" name="recommendation" /> Maybe
+    </label>
+    <label class="radio-option">
+      <input type="radio" value="not-sure" name="recommendation" /> Not sure
+    </label>
+  </div>
+
+  <label>What would you like to see improved? (Check all that apply)</label>
+  <div class="checkbox-group">
+    <label class="checkbox-option">
+      <input type="checkbox" value="visual-appeal">Enhancing the overall visual appeal, ease of navigation, and user
+      experience.
+    </label>
+    <label class="checkbox-option">
+      <input type="checkbox" value="load-times">Reducing load times, improving response rates, and optimizing overall
+      system performance.
+    </label>
+    <label class="checkbox-option">
+      <input type="checkbox" value="functionality">Expanding the functionality or adding new features that cater to user
+      needs or preferences.
+    </label>
+    <label class="checkbox-option">
+      <input type="checkbox" value="responsiveness">Improving the responsiveness, availability, and helpfulness of customer
+      support.
+    </label>
+    <label class="checkbox-option">
+      <input type="checkbox" value="accuracy">Ensuring higher accuracy, relevance, and timeliness of the information or
+      resources provided.
+    </label>
+  </div>
+
+  <label>
+    Any comments or suggestions?
+    <textarea> </textarea>
+  </label>
+  <button id="submit">Submit</button>
+</form>
+
+</html>
